@@ -14,15 +14,15 @@ export const handleImage = (req,res, db) =>{
 
 
 // Your PAT (Personal Access Token) can be found in the Account's Security section
-const PAT = '6e1b7081ba644da99df127824b6d9f94';
+const PAT = process.env.API_PAT;
 // Specify the correct user_id/app_id pairings
 // Since you're making inferences outside your app's scope
-const USER_ID = '2sc6m6lso1t2';
-const APP_ID = 'my-first-application-kk33d';
+const USER_ID = process.env.API_USER_ID;
+const APP_ID = process.env.API_APP_ID;
 // Change these to whatever model and image URL you want to use
-const MODEL_ID = 'face-detection';
-const MODEL_VERSION_ID = '6dc7e46bc9124c5c8824be4822abe105';
-const IMAGE_URL = 'https://samples.clarifai.com/metro-north.jpg';
+const MODEL_ID = process.env.API_MODEL_ID;
+const MODEL_VERSION_ID = process.env.API_MODEL_VERSION_ID;
+// const IMAGE_URL = 'https://samples.clarifai.com/metro-north.jpg';
 
 
 
