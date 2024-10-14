@@ -1,6 +1,6 @@
 export const handleProfileUpdate = (req,res,db) =>{
     const {email, username, avatar, id } = req.body;
-    db.transactions(trx => {
+    db.transaction(trx => {
         trx('login')
         .where('id',id)
         .update({ email })
